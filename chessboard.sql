@@ -31,9 +31,16 @@ select * from board
 
 -- create sp to move the pieces 
 go
-create proc movePiece 
-@start nvarchar,
-@end nvarchar
+create or alter proc movePiece 
+@startCol nvarchar,
+@startRow nvarchar,
+@endCol nvarchar,
+@endRow nvarchar
 as
-begin
+begin 
+declare @selectedPiece as nVarchar(2)  -- to know what peice was chosen 
+select @selectedPiece = @startCol from board where nRank = @startRow
+select @selectedPiece
 end
+
+exec movePiece e,4, e,5
