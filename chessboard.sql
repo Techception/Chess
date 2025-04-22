@@ -1,8 +1,9 @@
 -- create the board in SQL 
-
---drop table board
-
 ----create database chess
+--
+if OBJECT_ID(N'dbo.board',N'U') is not null drop table board
+--select OBJECT_ID(N'dbo.board',N'U')
+
 create table board 
 (
 	A nvarchar(2),
@@ -17,13 +18,22 @@ create table board
 	primary key (nRank)
 )
 insert into board
-select 'R', 'Kn', 'B', 'Q', 'K', 'B', 'Kn', 'R' union all
-select 'p','p','p','p','p','p','p','p' union all
+select 'wR', 'wN', 'wB', 'wQ', 'wK', 'wB', 'wN', 'wR' union all
+select 'wp','wp','wp','wp','wp','wp','wp','wp' union all
 select '','','','','','','','' union all
 select '','','','','','','','' union all
 select '','','','','','','','' union all
 select '','','','','','','','' union all
-select 'p','p','p','p','p','p','p','p' union all
-select 'R', 'Kn', 'B', 'Q', 'K', 'B', 'Kn', 'R'
+select 'bp','bp','bp','bp','bp','bp','bp','bp' union all
+select 'bR', 'bN', 'bB', 'bQ', 'bK', 'bB', 'bN', 'bR'
 
 select * from board
+
+-- create sp to move the pieces 
+go
+create proc movePiece 
+@start nvarchar,
+@end nvarchar
+as
+begin
+end
