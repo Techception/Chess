@@ -39,8 +39,12 @@ create or alter proc movePiece
 as
 begin 
 declare @selectedPiece as nVarchar(2)  -- to know what peice was chosen 
-select @selectedPiece = @startCol from board where nRank = @startRow
-select @selectedPiece
+-- select @selectedPiece = @startCol from board where nRank = @startRow
+select @startCol, 'expected: a board piece e.g. wp or bK ' from board where nRank = @startRow
+-- expected: a board piece e.g. wp or bK 
+
+--select @startCol
+--select @selectedPiece
 end
 
-exec movePiece e,4, e,5
+exec movePiece 'e',4, 'e',5
