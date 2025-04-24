@@ -21,3 +21,26 @@ black Rook - bR
 black Bishop - bB
 black Knight - bN
 black Pawn - bp
+
+Perhaps I will consider linearising the board to make it easier to control. 
+challenges with having it as a table are that I would need to prepare my sql statements in a string first 
+harder to debug i think 
+
+liniearisation would like like so: 
+standard chess board is 8x8 so 64 squares 
+Ill go along the ranks so A to H would be 1 to 8 in the linear scheme for rank 1 
+then in rank 2 it would be 9 to 16
+etc 
+rank 8 would be 56 to 64 
+I could then use a translation table for the interface so the user could put something like e4 
+the translation will find the index and the pieces will move. 
+
+in base 8 i could easily make key value mair like this 
+12345678
+12345678
+12345678
+12345678
+12345678
+12345678
+12345678
+12345678
