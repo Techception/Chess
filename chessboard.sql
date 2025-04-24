@@ -40,11 +40,28 @@ as
 begin 
 declare @selectedPiece as nVarchar(2)  -- to know what peice was chosen 
 -- select @selectedPiece = @startCol from board where nRank = @startRow
-select @startCol, 'expected: a board piece e.g. wp or bK ' from board where nRank = @startRow
--- expected: a board piece e.g. wp or bK 
+select *, @startCol, 'expected: a board piece e.g. wp or bK ' from board where nRank = @startRow
+
+declare @sql nvarchar(max);
+set @sql = '
+	select ' + quotename(@startCol) + ' 
+	from board where nRank = ' + @startRow
+execute( @sql )
+--print( @sql )
+
+-- expected: a wK when input e,1,e,4
+-- included a select * to see what the board looks like 
 
 --select @startCol
 --select @selectedPiece
 end
+exec movePiece 'e',1, 'e',5
 
-exec movePiece 'e',4, 'e',5
+go
+CREATE FUNCTION movePiece(@selection nvarchar)
+RETURNS INT 
+WITH EXECUTE AS CALLER 
+AS 
+BEGIN
+END
+	select * from 
