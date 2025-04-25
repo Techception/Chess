@@ -1,7 +1,8 @@
 -- create the board in SQL 
 ----create database chess
 --
-if OBJECT_ID(N'dbo.board',N'U') is not null drop table board
+if OBJECT_ID(N'dbo.board',N'U') is not null drop table board;
+if OBJECT_ID(N'dbo.translation',N'U') is not null drop table translation;
 --select OBJECT_ID(N'dbo.board',N'U')
 
 create table board 
@@ -25,43 +26,32 @@ select '','','','','','','','' union all
 select '','','','','','','','' union all
 select '','','','','','','','' union all
 select 'bp','bp','bp','bp','bp','bp','bp','bp' union all
-select 'bR', 'bN', 'bB', 'bQ', 'bK', 'bB', 'bN', 'bR'
+select 'bR', 'bN', 'bB', 'bQ', 'bK', 'bB', 'bN', 'bR';
+--select * from board
 
-select * from board
+ create table translation 
+ (
+	 gIndex int identity(1,1),
+	 gRank nvarchar(1),
+	 gFile nvarchar(1)
+ )
+ --select * from translation
 
--- create sp to move the pieces 
-go
-create or alter proc movePiece 
-@startCol nvarchar,
-@startRow nvarchar,
-@endCol nvarchar,
-@endRow nvarchar
-as
-begin 
-declare @selectedPiece as nVarchar(2)  -- to know what peice was chosen 
--- select @selectedPiece = @startCol from board where nRank = @startRow
-select *, @startCol, 'expected: a board piece e.g. wp or bK ' from board where nRank = @startRow
+ declare @totalSquares as int = 64
+ declare @cnt as int = 0
+ declare @Files as nvarchar(8) = 'ABCDEFGH'
 
-declare @sql nvarchar(max);
-set @sql = '
-	select ' + quotename(@startCol) + ' 
-	from board where nRank = ' + @startRow
-execute( @sql )
---print( @sql )
+ while @cnt < @totalSquares
+ begin 
+	declare @moduloFile int = 1+@cnt%8
+	declare @Rank int = 1 + @cnt/8
+	--select @Rank
+	 -- select @ranks, 1+@cnt, @moduloFile, substring(@ranks,@moduloFile,1)
+	 -- expected A;B;...;H
+	 insert into translation (gRank, gFile)
+	 select substring(@Files,@moduloFile,1), @Rank
+	 set @cnt = @cnt + 1
+ end 
 
--- expected: a wK when input e,1,e,4
--- included a select * to see what the board looks like 
 
---select @startCol
---select @selectedPiece
-end
-exec movePiece 'e',1, 'e',5
-
-go
-CREATE FUNCTION movePiece(@selection nvarchar)
-RETURNS INT 
-WITH EXECUTE AS CALLER 
-AS 
-BEGIN
-END
-	select * from 
+ select * from translation
