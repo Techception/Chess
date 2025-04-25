@@ -44,3 +44,12 @@ in base 8 i could easily make key value mair like this
 12345678
 12345678
 12345678
+
+
+okay so now ive built a table that essentially linearised the chess board 
+columns for an index between 1 to 64 that correspond to each file and rank of the board 
+
+i can use this to create somekind of proc or funtion that the user will enter the selected square and the go to square 
+it will choose the piece on the translation board and move it to the appropriate row 
+
+I will then have another proc that scans the translation table and uses the value to update the display table that will look more like the conventional chess board.  maybe ultimately this will be replaced. 
