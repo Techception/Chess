@@ -66,3 +66,30 @@ select 'bR', 'bN', 'bB', 'bQ', 'bK', 'bB', 'bN', 'bR';
 
 if object_id(N'dbo.fenpos',N'U') is not null drop table fenpos
 
+
+-----------
+
+
+declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR'  -- fen staring position 
+declare @Files as nvarchar(15) = 'A,B,C,D,E,F,G,H';-- the files 
+
+with board as 
+(
+--select value as gfile, ordinal as gfilenum from string_split(@files, ',', 1) union all
+select value as gFile, ordinal as gFileNum, ROW_NUMBER() over (partition by value order by ordinal) as grank from 
+	(
+	select * from string_split(@files, ',', 1) union all
+	select * from string_split(@files, ',', 1) union all
+	select * from string_split(@files, ',', 1) union all
+	select * from string_split(@files, ',', 1) union all
+	select * from string_split(@files, ',', 1) union all
+	select * from string_split(@files, ',', 1) union all
+	select * from string_split(@files, ',', 1) union all
+	select * from string_split(@files, ',', 1) 
+	) as preboard
+)
+select *, SUBSTRING(value,gfilenum,1) from board 
+cross apply string_split(@FEN, '/', 1) where ordinal =  grank
+order by grank, gFileNum
+
+
