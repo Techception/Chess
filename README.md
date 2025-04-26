@@ -1,6 +1,13 @@
 mainly a SQL project for now.
 creating the chess game in a sql table. 
 
+stages:
+
+> Drawing the board (0/2 subtasks completed)
+> moving the pieces (0/2 subtasks completed)
+> Game over (0/2 subtasks completed)
+> AI (/ subtasks completed)
+
 stages: 
  - Drawing the board -> in progress FENdraw.sql
  - - formatting the FEN notation
@@ -19,6 +26,12 @@ stages:
     - - is it check?
       - can the king move?
   - chess engine AI
+  - - legal movement
+    - Evaluation
+    - - Strategy
+      - tactics
+      - worth 
+    - 
 
 
 looking to work on a smaller piece of the project looking at just drawing the positions from the FEN notation 
