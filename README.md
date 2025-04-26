@@ -53,3 +53,12 @@ i can use this to create somekind of proc or funtion that the user will enter th
 it will choose the piece on the translation board and move it to the appropriate row 
 
 I will then have another proc that scans the translation table and uses the value to update the display table that will look more like the conventional chess board.  maybe ultimately this will be replaced. 
+
+
+looking to work on a smaller piece of the project looking at just drawing the positions from the FEN notation 
+see file FENdraw.SQL 
+
+Idea being i need to be able to display the positions before i consider making ways to interactively move the pieces 
+first just draw the positions but then there are also other parts to the FEN i need to consider such as whos the current move 
+need to learn more about FEN 
+ref: https://www.chess.com/terms/fen-chess#:~:text=FEN%20is%20the%20abbreviation%20of%20Forsyth-Edwards%20Notation%2C%20and,another%20system%20designed%20by%20the%20journalist%20David%20Forsyth.
