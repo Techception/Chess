@@ -1,77 +1,5 @@
--- create the board in SQL 
-----create database chess
---
-if OBJECT_ID(N'dbo.board',N'U') is not null drop table board;
-if OBJECT_ID(N'dbo.translation',N'U') is not null drop table translation;
---select OBJECT_ID(N'dbo.board',N'U')
-
-create table board 
-(
-	A nvarchar(2),
-	B nvarchar(2),
-	C nvarchar(2),
-	D nvarchar(2),
-	E nvarchar(2),
-	F nvarchar(2),
-	G nvarchar(2),
-	H nvarchar(2),
-	nRank int identity (1,1),
-	primary key (nRank)
-)
-insert into board
-select 'wR', 'wN', 'wB', 'wQ', 'wK', 'wB', 'wN', 'wR' union all
-select 'wp','wp','wp','wp','wp','wp','wp','wp' union all
-select '','','','','','','','' union all
-select '','','','','','','','' union all
-select '','','','','','','','' union all
-select '','','','','','','','' union all
-select 'bp','bp','bp','bp','bp','bp','bp','bp' union all
-select 'bR', 'bN', 'bB', 'bQ', 'bK', 'bB', 'bN', 'bR';
---select * from board
-
- create table translation 
- (
-	 gIndex int identity(1,1),
-	 gRank nvarchar(1),
-	 gRankNum int,
-	 gFile nvarchar(1),
-	 gOccupied int,
-	 gPiece nvarchar(3)
- )
- --select * from translation
-
- declare @totalSquares as int = 64  -- each square needs to have its own row 
- declare @cnt as int = 0 -- trying to be smart here because i dont want to manually type out the position plus learning for loops 
- declare @Files as nvarchar(8) = 'ABCDEFGH'  -- the files 
-  declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR'  -- fen staring position 
- -- I want this to ultimately take a fen input and make a fen output 
-
- while @cnt < @totalSquares
- begin 
-	declare @moduloFile int = 1+@cnt%8
-	declare @Rank int = 1 + @cnt/8
-	--select value from string_split(@fen, '/')
-	--select @Rank
-	 -- select @ranks, 1+@cnt, @moduloFile, substring(@ranks,@moduloFile,1)
-	 -- expected A;B;...;H
-	 insert into translation (gRank, gRankNum, gFile)
-	 select substring(@Files,@moduloFile,1), @moduloFile,  @Rank
-	 set @cnt = @cnt + 1
-
-
- end 
-
-
- select * from translation
-
-if object_id(N'dbo.fenpos',N'U') is not null drop table fenpos
-
-
------------
-
-
-declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR'  -- fen staring position 
 declare @Files as nvarchar(15) = 'A,B,C,D,E,F,G,H';-- the files 
+declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';  -- fen staring position 
 
 with board as 
 (
@@ -87,9 +15,20 @@ select value as gFile, ordinal as gFileNum, ROW_NUMBER() over (partition by valu
 	select * from string_split(@files, ',', 1) union all
 	select * from string_split(@files, ',', 1) 
 	) as preboard
+), 
+position as 
+(
+	select value as gPosition, Ordinal as grank,
+	substring(value, 1,1) as A,
+	substring(value, 2,1) as B,
+	substring(value, 3,1) as C,
+	substring(value, 4,1) as D,
+	substring(value, 5,1) as E,
+	substring(value, 6,1) as F,
+	substring(value, 7,1) as G,
+	substring(value, 8,1) as H
+	from string_split(@FEN, '/', 1)
 )
-select *, SUBSTRING(value,gfilenum,1) from board 
-cross apply string_split(@FEN, '/', 1) where ordinal =  grank
-order by grank, gFileNum
-
-
+--select *, substring(gPosition, gFileNum, 1) from board as b inner join position as p on b.grank = p.grank order by b.grank, gFileNum
+select * from position
+--SELECT * FROM BOARD
