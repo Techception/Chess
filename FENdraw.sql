@@ -5,7 +5,7 @@ declare @FENext as nvarchar(max);
 set @Files = 'A,B,C,D,E,F,G,H';-- the files 
 --set @FEN  = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';  -- fen staring position 
 set @FEN  = 'r1bq1rk1/pp3ppp/2pp3n/3P4/1nB1P3/2b2N1P/PB3PP1/R2QK2R'
-set @FENext = @FENext
+set @FENext = @FEN
 set @FENext = replace(@FENext, 8, space(8));
 set @FENext = replace(@FENext, 7, space(7));
 set @FENext = replace(@FENext, 6, space(6));
