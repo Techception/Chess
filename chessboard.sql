@@ -33,25 +33,36 @@ select 'bR', 'bN', 'bB', 'bQ', 'bK', 'bB', 'bN', 'bR';
  (
 	 gIndex int identity(1,1),
 	 gRank nvarchar(1),
-	 gFile nvarchar(1)
+	 gRankNum int,
+	 gFile nvarchar(1),
+	 gOccupied int,
+	 gPiece nvarchar(3)
  )
  --select * from translation
 
- declare @totalSquares as int = 64
- declare @cnt as int = 0
- declare @Files as nvarchar(8) = 'ABCDEFGH'
+ declare @totalSquares as int = 64  -- each square needs to have its own row 
+ declare @cnt as int = 0 -- trying to be smart here because i dont want to manually type out the position plus learning for loops 
+ declare @Files as nvarchar(8) = 'ABCDEFGH'  -- the files 
+  declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR'  -- fen staring position 
+ -- I want this to ultimately take a fen input and make a fen output 
 
  while @cnt < @totalSquares
  begin 
 	declare @moduloFile int = 1+@cnt%8
 	declare @Rank int = 1 + @cnt/8
+	--select value from string_split(@fen, '/')
 	--select @Rank
 	 -- select @ranks, 1+@cnt, @moduloFile, substring(@ranks,@moduloFile,1)
 	 -- expected A;B;...;H
-	 insert into translation (gRank, gFile)
-	 select substring(@Files,@moduloFile,1), @Rank
+	 insert into translation (gRank, gRankNum, gFile)
+	 select substring(@Files,@moduloFile,1), @moduloFile,  @Rank
 	 set @cnt = @cnt + 1
+
+
  end 
 
 
  select * from translation
+
+if object_id(N'dbo.fenpos',N'U') is not null drop table fenpos
+
