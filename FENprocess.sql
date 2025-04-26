@@ -7,9 +7,9 @@ return convert(int, substring(@FEN,patindex('%[1-8]%', @FEN),1))
 end
 go
 
-declare @FEN nvarchar(max);
-set @FEN = 'r1bq1rk1/pp3ppp/2pp3n/3P4/1nB1P3/2b2N1P/PB3PP1/R2QK2R w KQ - 0 12';
-select dbo.FENfreeSquares(@FEN)
+--declare @FEN nvarchar(max);
+--set @FEN = 'r1bq1rk1/pp3ppp/2pp3n/3P4/1nB1P3/2b2N1P/PB3PP1/R2QK2R w KQ - 0 12';
+--select dbo.FENfreeSquares(@FEN)
 go
 
 
@@ -26,8 +26,18 @@ begin
 end
 go
 
+--declare @FEN nvarchar(max);
+--set @FEN = 'r1bq1rk1/pp3ppp/2pp3n/3P4/1nB1P3/2b2N1P/PB3PP1/R2QK2R w KQ - 0 12';
+--select dbo.FENprocessFreeSquares(@FEN)
+go
+----------------------
+
 declare @FEN nvarchar(max);
 set @FEN = 'r1bq1rk1/pp3ppp/2pp3n/3P4/1nB1P3/2b2N1P/PB3PP1/R2QK2R w KQ - 0 12';
-select dbo.FENprocessFreeSquares(@FEN)
+declare @FENext as nvarchar(max);
+set @FENext = @FEN
+select @FENext = dbo.FENprocessFreeSquares(value) from string_split(@FENext, ' ', 1) where ordinal = 1 -- just get the position part of the FEN
+select @FENext
 
-
+--to do: I want a table with columns 
+-- FEN (raw), FEN (position), Turn, Castling, OnPasante **See the Fen guid for confirmation on what the columns represent 
