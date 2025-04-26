@@ -62,3 +62,5 @@ Idea being i need to be able to display the positions before i consider making w
 first just draw the positions but then there are also other parts to the FEN i need to consider such as whos the current move 
 need to learn more about FEN 
 ref: https://www.chess.com/terms/fen-chess#:~:text=FEN%20is%20the%20abbreviation%20of%20Forsyth-Edwards%20Notation%2C%20and,another%20system%20designed%20by%20the%20journalist%20David%20Forsyth.
+
+in fen lower case is black upper case is white - I will need SQL to be case sensitive.
