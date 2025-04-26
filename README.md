@@ -4,7 +4,9 @@ creating the chess game in a sql table.
 stages: 
  - Drawing the board -> in progress FENdraw.sql
  - - formatting the FEN notation
-   - adding the pieces to a table that resembles a chess board
+   - - Manually --> Done
+     - Automatically --> In progress to do: FEN derived table 
+   - adding the pieces to a table that resembles a chess board --> in review 
  - moving the pieces - in progress
  - - selecting the right piece
    - checking if move is legal
