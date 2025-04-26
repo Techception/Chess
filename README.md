@@ -3,10 +3,10 @@ creating the chess game in a sql table.
 
 stages:
 
--> Drawing the board (0/2 subtasks completed)
--> moving the pieces (0/2 subtasks completed)
--> Game over (0/2 subtasks completed)
--> AI (/ subtasks completed)
++ Drawing the board (0/2 subtasks completed)
++ moving the pieces (0/2 subtasks completed)
++ Game over (0/2 subtasks completed)
++ AI (/ subtasks completed)
 
 stages: 
  - Drawing the board -> in progress FENdraw.sql
