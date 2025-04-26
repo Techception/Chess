@@ -2,7 +2,9 @@ mainly a SQL project for now.
 creating the chess game in a sql table. 
 
 stages: 
- - Drawing the board - done FENdraw.sql
+ - Drawing the board -> in progress FENdraw.sql
+ - - formatting the FEN notation
+   - adding the pieces to a table that resembles a chess board
  - moving the pieces - in progress
  - - selecting the right piece
    - checking if move is legal
