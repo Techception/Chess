@@ -1,13 +1,13 @@
 mainly a SQL project for now.
 creating the chess game in a sql table. 
 
-Mile stone stages:
+**Mile stone stages:**
 + Drawing the board (0/2 subtasks completed)
 + Moving the pieces (0/2 subtasks completed)
 + Game over (0/2 subtasks completed)
 + AI (0/3 subtasks completed)
 
-Sub-stages: 
+**Sub-stages: **
 Drawing the board -> in progress FENdraw.sql
 - formatting the FEN notation
 - - Manually --> Done
