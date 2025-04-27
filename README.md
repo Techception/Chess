@@ -9,10 +9,16 @@ AI (0/3 subtasks completed)<br>
 
 <dl>
 <dt>Drawing the board <i>in progress, see: FENdraw.sql</i></dt>
- <dd>formatting the FEN notation</dd>
- <dd>Manually --> Done</dd>
- <dd>Automatically --> In progress to do: FEN derived table0</dd>
- <dd>adding the pieces to a table that resembles a chess board --> in review</dd> 
+  <dd>
+   Formatting The FEN Notation
+    <dl>
+      <dt>Mandatory</dt>
+       <dd>Manually --> Done</dd>
+      <dt>Optional</dt>
+       <dd>Automatically --> In progress to do: FEN derived table</dd>
+    </dl>
+  </dd>
+  <dd>adding the pieces to a table that resembles a chess board --> in review</dd> 
 </dl>
 
 <h5>Moving the pieces</h5> - in progress
