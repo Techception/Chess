@@ -7,7 +7,7 @@ creating the chess game in a sql table.
 + Game over (0/2 subtasks completed)
 + AI (0/3 subtasks completed)
 
-**Sub-stages: **
+**Sub-stages:**
 Drawing the board -> in progress FENdraw.sql
 - formatting the FEN notation
 - - Manually --> Done
