@@ -2,37 +2,37 @@ mainly a SQL project for now.
 creating the chess game in a sql table. 
 
 Mile stone stages:
-
 + Drawing the board (0/2 subtasks completed)
 + Moving the pieces (0/2 subtasks completed)
 + Game over (0/2 subtasks completed)
 + AI (0/3 subtasks completed)
 
-stages: 
- - Drawing the board -> in progress FENdraw.sql
- - - formatting the FEN notation
-   - - Manually --> Done
-     - Automatically --> In progress to do: FEN derived table 
-   - adding the pieces to a table that resembles a chess board --> in review 
- - moving the pieces - in progress
- - - selecting the right piece
-   - checking if move is legal
-   - -  check if square is occupied
-     - - square is available to move to
-       - square contains ally pieces blocking movement to it
-       - square contains enemy pieces which can be destroyed 
-     - moving the piece to the legal square
-  - check for game over
-    - - is it check?
-      - can the king move?
-  - chess engine AI
-  - - legal movement
-    - Evaluation
-    - - Strategy
-      - tactics
-      - worth 
-    - 
+Sub-stages: 
+Drawing the board -> in progress FENdraw.sql
+- formatting the FEN notation
+- - Manually --> Done
+- - Automatically --> In progress to do: FEN derived table 
+- adding the pieces to a table that resembles a chess board --> in review
 
+Moving the pieces - in progress
+- selecting the right piece
+- checking if move is legal
+- - check if square is occupied
+- - square is available to move to
+- - square contains ally pieces blocking movement to it
+- - square contains enemy pieces which can be destroyed 
+- moving the piece to the legal square
+ 
+ Game Over
+ - is it check?
+ - can the king move?
+   
+chess engine AI
+- legal movement
+- Evaluation
+- - Strategy
+- - tactics
+- - worth 
 
 looking to work on a smaller piece of the project looking at just drawing the positions from the FEN notation 
 see file FENdraw.SQL 
