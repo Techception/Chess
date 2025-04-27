@@ -1,51 +1,44 @@
 mainly a SQL project for now.
 creating the chess game in a sql table. 
 
-<h3>Milestone Stages</h3>
-Drawing the board (0/2 subtasks completed)<br>
-Moving the pieces (0/2 subtasks completed)<br>
-Game over (0/2 subtasks completed)<br>
-AI (0/3 subtasks completed)<br>
+Milestone Stages
+- Drawing the board (0/2 subtasks completed)
+- Moving the pieces (0/2 subtasks completed)
+- Game over (0/2 subtasks completed)
+- AI (0/3 subtasks completed)
 
-<dl>
-<dt>Drawing the board <i>in progress, see: FENdraw.sql</i></dt>
-  <dd>
-   Formatting The FEN Notation
-    <dl>
-      <dt>Mandatory</dt>
-       <dd>Manually --> Done</dd>
-      <dt>Optional</dt>
-       <dd>Automatically --> In progress to do: FEN derived table</dd>
-    </dl>
-  </dd>
-  <dd>adding the pieces to a table that resembles a chess board --> in review</dd> 
-</dl>
 
-<h5>Moving the pieces</h5> - in progress
-<ul>
- <li> selecting the right piece</li>
- <li> checking if move is legal</li>
- <li></li>
- <li></li>
- 
-- - check if square is occupied
-- - square is available to move to
-- - square contains ally pieces blocking movement to it
-- - square contains enemy pieces which can be destroyed 
+<b>Drawing the board</b>
+<br>
+<i>in progress, see: FENdraw.sql</i>
+- Formatting The FEN Notation
+- adding the pieces to a table that resembles a chess board --> in review
+
+
+<b>Moving the pieces</b> 
+<br>
+<i>in progress</i>
+- selecting the right piece
+- checking if move is legal
+- check if square is occupied
+- square is available to move to
+- square contains ally pieces blocking movement to it
+- square contains enemy pieces which can be destroyed 
 - moving the piece to the legal square
-</ul>
-
  
- <h5>Game Over</h5>
- - is it check?
- - can the king move?
+<b>Game Over</b>
+<br>
+<i>Not started</i>
+- is it check?
+- can the king move?
    
-<h5>AI</h5>
+<b>AI</b>
+<br>
+<i>Not started</i>
 - legal movement
 - Evaluation
-- - Strategy
-- - tactics
-- - worth 
+- Strategy
+- Tactics
 
 looking to work on a smaller piece of the project looking at just drawing the positions from the FEN notation 
 see file FENdraw.SQL 
