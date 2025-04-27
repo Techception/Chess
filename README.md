@@ -1,33 +1,42 @@
 mainly a SQL project for now.
 creating the chess game in a sql table. 
 
-**Mile stone stages:**
-+ Drawing the board (0/2 subtasks completed)
-+ Moving the pieces (0/2 subtasks completed)
-+ Game over (0/2 subtasks completed)
-+ AI (0/3 subtasks completed)
+<h3>Milestone Stages</h3>
+Drawing the board (0/2 subtasks completed)<br>
+Moving the pieces (0/2 subtasks completed)<br>
+Game over (0/2 subtasks completed)<br>
+AI (0/3 subtasks completed)
 
-**Sub-stages:** 
-Drawing the board -> in progress FENdraw.sql
-- formatting the FEN notation
-- - Manually --> Done
-- - Automatically --> In progress to do: FEN derived table 
-- adding the pieces to a table that resembles a chess board --> in review
+<br>
+<h3>sub-stages</h3>
+<h5>Drawing the board</h5> in progress FENdraw.sql
+<ul>
+<li>formatting the FEN notation <li>Manually --> Done</li></li>
+<li>Automatically --> In progress to do: FEN derived table</li>
+<li>adding the pieces to a table that resembles a chess board --> in review</li>
+</ul>
 
-Moving the pieces - in progress
-- selecting the right piece
-- checking if move is legal
+
+<h5>Moving the pieces</h5> - in progress
+<ul>
+ <li> selecting the right piece</li>
+ <li> checking if move is legal</li>
+ <li></li>
+ <li></li>
+ 
 - - check if square is occupied
 - - square is available to move to
 - - square contains ally pieces blocking movement to it
 - - square contains enemy pieces which can be destroyed 
 - moving the piece to the legal square
+</ul>
+
  
- Game Over
+ <h5>Game Over</h5>
  - is it check?
  - can the king move?
    
-chess engine AI
+<h5>AI</h5>
 - legal movement
 - Evaluation
 - - Strategy
