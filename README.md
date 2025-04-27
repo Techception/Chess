@@ -1,11 +1,13 @@
 mainly a SQL project for now.
 creating the chess game in a sql table. 
 
-Milestone Stages
+<b>Milestone Stages</b>
+<br>
+<i>in progress, 0 of 4 complete</i>
 - Drawing the board (0/2 subtasks completed)
-- Moving the pieces (0/2 subtasks completed)
+- Moving the pieces (0/7 subtasks completed)
 - Game over (0/2 subtasks completed)
-- AI (0/3 subtasks completed)
+- AI (0/4 subtasks completed)
 
 
 <b>Drawing the board</b>
@@ -29,8 +31,16 @@ Milestone Stages
 <b>Game Over</b>
 <br>
 <i>Not started</i>
-- is it check?
-- can the king move?
+- Win
+- Loss
+- Draw
+- 50 Move Rule
+- Checkmate 
+  - Is it check?
+  - Can the king move?
+- Stalemate
+- Insufficient material
+- Time out
    
 <b>AI</b>
 <br>
