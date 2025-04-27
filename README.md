@@ -5,17 +5,15 @@ creating the chess game in a sql table.
 Drawing the board (0/2 subtasks completed)<br>
 Moving the pieces (0/2 subtasks completed)<br>
 Game over (0/2 subtasks completed)<br>
-AI (0/3 subtasks completed)
+AI (0/3 subtasks completed)<br>
 
-<br>
-<h3>sub-stages</h3>
-<h5>Drawing the board</h5> in progress FENdraw.sql
-<ul>
-<li>formatting the FEN notation <li>Manually --> Done</li></li>
-<li>Automatically --> In progress to do: FEN derived table</li>
-<li>adding the pieces to a table that resembles a chess board --> in review</li>
-</ul>
-
+<dl>
+<dt>Drawing the board <i>in progress, see: FENdraw.sql</i></dt>
+ <dd>formatting the FEN notation</dd>
+ <dd>Manually --> Done</dd>
+ <dd>Automatically --> In progress to do: FEN derived table0</dd>
+ <dd>adding the pieces to a table that resembles a chess board --> in review</dd> 
+</dl>
 
 <h5>Moving the pieces</h5> - in progress
 <ul>
