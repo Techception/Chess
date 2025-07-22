@@ -1,4 +1,4 @@
-declare @Files as nvarchar(15) = 'A,B,C,D,E,F,G,H';-- the files 
+declare @Files as nvarchar(15) = 'A,B,C,D,E,F,G,H';-- the files  
 declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';  -- fen staring position 
 
 with board as 
