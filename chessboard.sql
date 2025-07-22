@@ -3,9 +3,12 @@ declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';  
 
 with board as 
 (
+--declare @Files as nvarchar(15) = 'A,B,C,D,E,F,G,H';-- the files  
 --select value as gfile, ordinal as gfilenum from string_split(@files, ',', 1) union all
 select value as gFile, ordinal as gFileNum, ROW_NUMBER() over (partition by value order by ordinal) as grank from 
 	(
+	/*I didnt want to write out all 64 squares, so I used string_split to create the board from the files*/
+	--declare @Files as nvarchar(15) = 'A,B,C,D,E,F,G,H';-- the files  
 	select * from string_split(@files, ',', 1) union all
 	select * from string_split(@files, ',', 1) union all
 	select * from string_split(@files, ',', 1) union all
@@ -14,7 +17,8 @@ select value as gFile, ordinal as gFileNum, ROW_NUMBER() over (partition by valu
 	select * from string_split(@files, ',', 1) union all
 	select * from string_split(@files, ',', 1) union all
 	select * from string_split(@files, ',', 1) 
-	) as preboard
+	) as preboard 
+	--going to use the preboard for the engine and determining what piece is selected 
 ), 
 position as 
 (
