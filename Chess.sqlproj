@@ -62,7 +62,6 @@
     <None Include="DrawChessboard.sql" />
     <None Include="Archive\FENdraw.sql" />
     <None Include="Archive\movePiece.SQL" />
-    <None Include="Archive\FENprocess.sql" />
     <Build Include="GameList.sql" />
   </ItemGroup>
   <ItemGroup>
@@ -70,5 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Chess.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fn_FENprocess.sql" />
   </ItemGroup>
 </Project>
