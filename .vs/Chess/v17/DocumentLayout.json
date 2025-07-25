@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\chessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:chessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\chessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:chessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,21 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "chessboard.sql ",
-              "DocumentMoniker": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\chessboard.sql",
-              "RelativeDocumentMoniker": "chessboard.sql",
-              "ToolTip": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\chessboard.sql\r\n(localdb)\\ProjectModels.Chess_3\r\n(PDINET\\alexander.hall)",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-07-22T14:44:20.676Z",
-              "EditorCaption": ""
             }
           ]
         }

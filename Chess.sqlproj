@@ -56,11 +56,19 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Archive" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="chessboard.sql" />
-    <Build Include="FENdraw.sql" />
-    <Build Include="FENprocess.sql" />
-    <Build Include="movePiece.SQL" />
+    <None Include="DrawChessboard.sql" />
+    <None Include="Archive\FENdraw.sql" />
+    <None Include="Archive\movePiece.SQL" />
+    <None Include="Archive\FENprocess.sql" />
+    <Build Include="GameList.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Archive\DefineSquares.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Chess.refactorlog" />
   </ItemGroup>
 </Project>
