@@ -19,7 +19,8 @@ Notes:<br>
 can take the first section of the FEN notation which provides the positition and convert it into a visual representation of pieces on a chess board via an SQL table.
 The 'pieces' are just letters representing the piece.  In the next 'sprint' I will consider inprovements. <br>
 Still to do:- Format the remain parts of the FEN however this is not essential for the drawing 
-<br><br>
+<br>
+<br>
 <b>Moving the pieces</b> 
 <br>
 <i>in progress</i><br>
