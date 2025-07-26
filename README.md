@@ -13,8 +13,9 @@ creating the chess game in a sql table.
 <br>
 <i>complete 2025-07-26, see: DrawChessboard.sql</i>
 - Formatting The FEN Notation
-- adding the pieces to a table that resembles a chess board --> in review<br>
-Notes:
+- adding the pieces to a table that resembles a chess board --> in review
+<br>
+Notes:<br>
 can take the first section of the FEN notation which provides the positition and convert it into a visual representation of pieces on a chess board via an SQL table.
 The 'pieces' are just letters representing the piece.  In the next 'sprint' I will consider inprovements. <br>
 Still to do:- Format the remain parts of the FEN however this is not essential for the drawing 
