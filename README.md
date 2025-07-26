@@ -24,6 +24,7 @@ Still to do:- Format the remain parts of the FEN however this is not essential f
 <b>Moving the pieces</b> 
 <br>
 <i>in progress</i>
+<ul> 
 - selecting the right piece
 - checking if move is legal
 - check if square is occupied
@@ -31,6 +32,7 @@ Still to do:- Format the remain parts of the FEN however this is not essential f
 - square contains ally pieces blocking movement to it
 - square contains enemy pieces which can be destroyed 
 - moving the piece to the legal square
+</ul>
 <br>
 <b>Game Over</b>
 <br>
