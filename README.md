@@ -4,7 +4,7 @@ creating the chess game in a sql table.
 <b>Milestone Stages</b>
 <br>
 <i>in progress, 0 of 4 complete</i>
-- Drawing the board (0/2 subtasks completed)
+- Drawing the board (2/2 subtasks completed) 2025-07-26
 - Moving the pieces (0/7 subtasks completed)
 - Game over (0/2 subtasks completed)
 - AI (0/4 subtasks completed)
@@ -15,7 +15,10 @@ creating the chess game in a sql table.
 <i>in progress, see: FENdraw.sql</i>
 - Formatting The FEN Notation
 - adding the pieces to a table that resembles a chess board --> in review
-
+Notes:
+can take the first section of the FEN notation which provides the positition and convert it into a visual representation of pieces on a chess board via an SQL table.
+The 'pieces' are just letters representing the piece.  In the next 'sprint' I will consider inprovements. 
+Still to do:- Format the remain parts of the FEN however this is not essential for the drawing 
 
 <b>Moving the pieces</b> 
 <br>
