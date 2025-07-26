@@ -9,7 +9,6 @@ creating the chess game in a sql table.
 - Game over (0/2 subtasks completed)
 - AI (0/4 subtasks completed)
 
-
 <b>Drawing the board</b>
 <br>
 <i>in progress, see: FENdraw.sql</i>
@@ -20,6 +19,7 @@ Notes:
 can take the first section of the FEN notation which provides the positition and convert it into a visual representation of pieces on a chess board via an SQL table.
 The 'pieces' are just letters representing the piece.  In the next 'sprint' I will consider inprovements. 
 Still to do:- Format the remain parts of the FEN however this is not essential for the drawing 
+<br>
 <br>
 <b>Moving the pieces</b> 
 <br>
