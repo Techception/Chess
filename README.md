@@ -31,7 +31,7 @@ Still to do:- Format the remain parts of the FEN however this is not essential f
 - square contains ally pieces blocking movement to it
 - square contains enemy pieces which can be destroyed 
 - moving the piece to the legal square
- 
+<br>
 <b>Game Over</b>
 <br>
 <i>Not started</i>
@@ -45,7 +45,7 @@ Still to do:- Format the remain parts of the FEN however this is not essential f
 - Stalemate
 - Insufficient material
 - Time out
-   
+<br>   
 <b>AI</b>
 <br>
 <i>Not started</i>
