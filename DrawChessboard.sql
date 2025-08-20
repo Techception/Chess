@@ -19,7 +19,7 @@ with position as
 select * from position;
 go
 -----------------------------
-
+-- main
 --declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';  -- fen staring position 
 declare @FEN as nvarchar(max) = 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR'; --b KQkq e3 0 1
 exec DrawChessboard @FEN

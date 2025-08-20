@@ -63,6 +63,8 @@
     <None Include="Archive\FENdraw.sql" />
     <None Include="Archive\movePiece.SQL" />
     <Build Include="GameList.sql" />
+    <None Include="ProjectPlan.sql" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Archive\DefineSquares.sql" />

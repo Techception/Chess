@@ -1,5 +1,5 @@
 ﻿declare @Files as nvarchar(15) = 'A,B,C,D,E,F,G,H';-- the files  
--- use this later when i come to make the enginer.  
+--use this later when i come to make the engine.  
 --for now we just want to make a FEN reader that will show the changes in the board
 with board as 
 (
