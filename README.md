@@ -17,23 +17,25 @@ creating the chess game in a sql table.
 <br><br>
 Notes:<br>
 can take the first section of the FEN notation which provides the positition and convert it into a visual representation of pieces on a chess board via an SQL table.
-The 'pieces' are just letters representing the piece.  In the next 'sprint' I will consider inprovements. <br>
+The 'pieces' are just letters representing the piece.  
+In the next 'sprint' I will consider improvements. <br>
 <br>
 Still to do:- Format the remain parts of the FEN however this is not essential for the drawing 
 <br>
 <br>
+
 <b>Moving the pieces</b> 
 <br>
 <i>in progress</i><br>
+- selecting the right piece
+- checking if move is legal
+- check if square is occupied
+- square is available to move to
+- square contains ally pieces blocking movement to it
+- square contains enemy pieces which can be destroyed
+- moving the piece to the legal square
 <br>
-<li>selecting the right piece</li> 
-<li>checking if move is legal</li>
-<li>check if square is occupied</li>
-<li>square is available to move to</li>
-<li>square contains ally pieces blocking movement to it</li>
-<li>square contains enemy pieces which can be destroyed</li>
-<li>moving the piece to the legal square</li>
-<br>
+
 <b>Game Over</b>
 <br>
 <i>Not started</i>
@@ -48,6 +50,7 @@ Still to do:- Format the remain parts of the FEN however this is not essential f
 - Insufficient material
 - Time out
 <br>   
+
 <b>AI</b>
 <br>
 <i>Not started</i>
