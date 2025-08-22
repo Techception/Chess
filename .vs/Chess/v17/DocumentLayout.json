@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\games.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:games.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\DrawChessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:DrawChessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\FENprocess.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:FENprocess.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\DrawChessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
@@ -19,12 +23,12 @@
       "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:DrawChessboard.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\FENprocess.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:FENprocess.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\games.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:games.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\FENprocess.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
-      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:FENprocess.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+      "AbsoluteMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\games.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
+      "RelativeMoniker": "D:0:0:{220AA283-5996-48CD-AFA5-62AA0CBE20DF}|Chess.sqlproj|solutionrelative:games.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,8 +37,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 104,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,19 +54,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FENprocess.sql ",
-              "DocumentMoniker": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\FENprocess.sql",
-              "RelativeDocumentMoniker": "FENprocess.sql",
-              "ToolTip": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\FENprocess.sql",
-              "RelativeToolTip": "FENprocess.sql",
+              "DocumentIndex": 0,
+              "Title": "games.sql ",
+              "DocumentMoniker": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\games.sql",
+              "RelativeDocumentMoniker": "games.sql",
+              "ToolTip": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\games.sql",
+              "RelativeToolTip": "games.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-07-25T14:41:57.047Z",
+              "WhenOpened": "2025-08-20T16:10:44.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-08-20T15:06:46.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DrawChessboard.sql ",
               "DocumentMoniker": "C:\\Users\\alexander.hall\\source\\repos\\Techception\\Chess\\DrawChessboard.sql",
               "RelativeDocumentMoniker": "DrawChessboard.sql",
